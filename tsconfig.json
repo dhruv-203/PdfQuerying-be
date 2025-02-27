@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // The target JavaScript version
+    "module": "NodeNext", // The module system
+    "lib": [
+      "es2023"
+    ], // Library definitions
+    // "allowJs": true, // Allows JavaScript files to be compiled
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enables compatibility for importing CommonJS modules
+    "skipLibCheck": true, // Skips type checking of all declaration files
+    "forceConsistentCasingInFileNames": true, // Ensures consistent casing in file names
+    "moduleResolution": "node16", // Module resolution strategy
+    "outDir": "./dist", // Output directory for compiled files
+    "baseUrl": "src/", // Root directory of the source files
+    "sourceMap": true, // Generates corresponding .map files
+    "resolveJsonModule": true, // Allows import of .json files
+    "emitDecoratorMetadata": true, // Enables emitting decorator metadata (required for TypeORM)
+    "experimentalDecorators": true, // Enables experimental support for decorators
+    "typeRoots": [
+      "./node_modules/@types"
+    ], // Specifies the type definition files to include
+    "types": [
+      "node",
+      // "express"
+    ] // Includes type definitions for Node.js
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ], // Excludes the node_modules and dist folders
+  "include": [
+    "src/**/*.ts",
+    "types.d.ts"
+  ] // Includes all TypeScript files in the src directory
+}
